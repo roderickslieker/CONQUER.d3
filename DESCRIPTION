@@ -1,0 +1,19 @@
+Package: conquer.d3js
+Type: Package
+Title: Provide easy to use interface between R and d3
+Version: 0.1.0
+Author: G.A.Bouland[aut], R.C.Slieker[aut,cre] 
+Maintainer: Roderick Slieker <r.c.slieker@lumc.nl>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: GPL-3
+Encoding: UTF-8
+Import:
+  htmlwidgets,
+  jsonlite,
+  viridis,
+  conquer.db,
+  GenomicRanges,
+  magrittr
+LazyData: true
+RoxygenNote: 7.1.0

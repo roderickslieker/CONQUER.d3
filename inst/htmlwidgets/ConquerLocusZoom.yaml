@@ -1,0 +1,9 @@
+dependencies:
+  - name: ConquerLocusZoom
+    version: 0.0.1
+    src: htmlwidgets/lib
+    script:
+      - d3.v4.js
+      - Locusfunctions.js
+    stylesheet:
+      - locuszoom_style.css

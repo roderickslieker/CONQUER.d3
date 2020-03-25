@@ -1,0 +1,51 @@
+#' ConquerRing
+#' @import htmlwidgets
+#' @export
+ConquerRing <- function(conquerSummary, tissue, KEGG_DATA ,hoverID, width = NULL, height = NULL, elementId = NULL) {
+
+  data <- RingPrepareData(conquerSummary, tissue, KEGG_DATA)
+  data <- jsonlite::toJSON(data)
+  x = list(
+    data = data,
+    tissue = tissue,
+    hoverID = hoverID
+  )
+
+  # create widget
+  htmlwidgets::createWidget(
+    name = 'ConquerRing',
+    x,
+    width = width,
+    height = height,
+    package = 'conquer.d3js',
+    elementId = elementId
+  )
+}
+
+#' Shiny bindings for conquer.d3js
+#'
+#' Output and render functions for using conquer.d3js within Shiny
+#' applications and interactive Rmd documents.
+#'
+#' @param outputId output variable to read from
+#' @param width,height Must be a valid CSS unit (like \code{'100\%'},
+#'   \code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
+#'   string and have \code{'px'} appended.
+#' @param expr An expression that generates a conquer.d3js
+#' @param env The environment in which to evaluate \code{expr}.
+#' @param quoted Is \code{expr} a quoted expression (with \code{quote()})? This
+#'   is useful if you want to save an expression in a variable.
+#'
+#' @name conquer.d3js-shiny
+#'
+#' @export
+ConquerRingOutput <- function(outputId, width = '100%', height = '400px'){
+  htmlwidgets::shinyWidgetOutput(outputId, 'ConquerRing', width, height, package = 'conquer.d3js')
+}
+
+#' @rdname conquer.d3js-shiny
+#' @export
+renderConquerRing <- function(expr, env = parent.frame(), quoted = FALSE) {
+  if (!quoted) { expr <- substitute(expr) } # force quoted
+  htmlwidgets::shinyRenderWidget(expr, ConquerRingOutput, env, quoted = TRUE)
+}

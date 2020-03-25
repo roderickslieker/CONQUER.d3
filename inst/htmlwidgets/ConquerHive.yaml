@@ -1,0 +1,9 @@
+dependencies:
+  - name: ConquerHive
+    version: 0.0.1
+    src: htmlwidgets/lib
+    script:
+      - d3.v4.js
+      - d3.hive.min.js
+    stylesheet:
+      - hive_style.css

@@ -1,0 +1,60 @@
+.axis {
+	stroke: #000;
+	stroke-width:1.5px;
+}
+
+.node {
+	stroke:#000;
+}
+
+.link {
+  fill: none;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.8;
+  stroke: #A4A4A4;
+}
+
+
+.link.turnedOn {
+	stroke-width: 5px;
+	stroke: #d11141;
+}
+
+
+.link.turnedOff {
+stroke-opacity: 0.3;
+stroke-width: 1px;
+}
+
+.node.turnedOn {
+stroke: black;
+stroke-width: 3px;
+}
+
+#tooltip {
+	position: absolute;
+	width: auto;
+	height: auto;
+	padding: 10px;
+	background-color: white;
+	-quoteswebkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	pointer-events: none;
+    white-space:nowrap;
+
+}
+
+#tooltip.hidden {
+	display: none;
+}
+
+#tooltip p {
+	margin: 0;
+	font-family: "Open Sans", cursive, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}

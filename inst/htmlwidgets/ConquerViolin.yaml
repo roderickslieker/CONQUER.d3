@@ -1,0 +1,10 @@
+dependencies:
+  - name: ConquerViolin
+    version: 0.0.1
+    src: htmlwidgets/lib
+    script:
+      - d3.v4.js
+      - Violinfunctions.js
+      - d3-scale-chromatic.v1.min.js
+    stylesheet:
+      - violin_style.css

@@ -1,0 +1,24 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+.tooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  -quoteswebkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+    white-space:nowrap;
+  font-family: Open Sans;
+  font-size: 14px;
+}
+
+.path {
+      stroke: lightgrey;
+      stroke-width: 0.1;
+}

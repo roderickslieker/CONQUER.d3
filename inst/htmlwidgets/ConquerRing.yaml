@@ -1,0 +1,6 @@
+dependencies:
+  - name: ConquerRing
+    version: 0.0.1
+    src: htmlwidgets/lib
+    script:
+      - d3plus.v2.0.0-alpha.22.full.min.js

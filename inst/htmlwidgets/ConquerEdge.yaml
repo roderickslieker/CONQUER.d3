@@ -1,0 +1,9 @@
+dependencies:
+  - name: ConquerEdge
+    version: 0.0.1
+    src: htmlwidgets/lib
+    script:
+      - d3.v4.js
+      - Edgefunctions.js
+    stylesheet:
+      - edge_style.css
