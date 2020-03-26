@@ -1,5 +1,10 @@
 #' ConquerViolin
-#' @import htmlwidgets
+#' @param SNP SNP name
+#' @param gene gene name
+#' @param tissue tissue
+#' @param width Width
+#' @param height Height
+#' @param elementId elementId 
 #' @export
 ConquerViolin <- function(SNP, gene, tissue, width = NULL, height = NULL, elementId = NULL) {
   violData <- violGetData(SNP = SNP, gene = gene, tissue=tissue)

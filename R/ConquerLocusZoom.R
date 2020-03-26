@@ -1,5 +1,8 @@
 #' ConquerLocusZoom
-#' @import htmlwidgets
+#' @param SNPData SNPdata
+#' @param width Width
+#' @param height Height
+#' @param elementId elementId
 #' @export
 ConquerLocusZoom <- function(SNPData, width = NULL, height = NULL, elementId = NULL) {
 

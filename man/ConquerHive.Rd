@@ -13,6 +13,19 @@ ConquerHive(
   elementId = NULL
 )
 }
+\arguments{
+\item{SNPData}{SNPdata}
+
+\item{cis}{Include cis}
+
+\item{trans}{Include trans}
+
+\item{width}{Width}
+
+\item{height}{Height}
+
+\item{elementId}{elementId}
+}
 \description{
 ConquerHive
 }

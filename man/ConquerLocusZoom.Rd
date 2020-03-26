@@ -6,6 +6,15 @@
 \usage{
 ConquerLocusZoom(SNPData, width = NULL, height = NULL, elementId = NULL)
 }
+\arguments{
+\item{SNPData}{SNPdata}
+
+\item{width}{Width}
+
+\item{height}{Height}
+
+\item{elementId}{elementId}
+}
 \description{
 ConquerLocusZoom
 }

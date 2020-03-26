@@ -6,6 +6,15 @@
 \usage{
 ConquerEdge(conquerSummary, width = NULL, height = NULL, elementId = NULL)
 }
+\arguments{
+\item{conquerSummary}{Summary file  of CONQUER}
+
+\item{width}{width of the figure}
+
+\item{height}{height of the figure}
+
+\item{elementId}{elementId}
+}
 \description{
 ConquerEdge
 }

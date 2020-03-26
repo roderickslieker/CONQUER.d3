@@ -1,5 +1,10 @@
 #' ConquerHive
-#' @import htmlwidgets
+#' @param SNPData SNPdata
+#' @param cis Include cis
+#' @param trans Include trans
+#' @param width Width
+#' @param height Height
+#' @param elementId elementId
 #' @export
 ConquerHive <- function(SNPData, cis=T, trans=T, width = NULL, height = NULL, elementId = NULL) {
 

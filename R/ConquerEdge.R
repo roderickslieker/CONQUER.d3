@@ -1,6 +1,9 @@
 #' ConquerEdge
-#' @import htmlwidgets
-#' @export
+#' @param conquerSummary Summary file  of CONQUER
+#' @param width width of the figure
+#' @param height height of the figure
+#' @param elementId elementId
+#' @export 
 ConquerEdge <- function(conquerSummary, width = NULL, height = NULL, elementId = NULL) {
 
   pathwayTissue <- EdgePrepareData(conquerSummary)
