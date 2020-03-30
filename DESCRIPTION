@@ -11,9 +11,9 @@ LazyData: true
 Depend:
   jsonlite,
   viridis,
-  conquer.db,
   GenomicRanges,
   magrittr
 Imports: 
-  htmlwidgets
+  htmlwidgets,
+  conquer.db
 RoxygenNote: 7.1.0

@@ -1,3 +1,4 @@
+#' @import conquer.db
 lz.recombinationData <- function(chr, start, end) {
   #take the recombination data from the correct file
   recomb <- conquer.db::recombinationRate

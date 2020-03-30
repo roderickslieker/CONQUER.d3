@@ -1,3 +1,4 @@
+#' @import conquer.db
 HivePrepareData <- function(SNPData, cis, trans){
   #Get eQTLS in cis from SNP data
   if(cis && trans){
