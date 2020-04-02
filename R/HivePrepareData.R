@@ -1,4 +1,3 @@
-#' @import conquer.db
 HivePrepareData <- function(SNPData, cis, trans){
   #Get eQTLS in cis from SNP data
   if(cis && trans){
@@ -16,7 +15,7 @@ HivePrepareData <- function(SNPData, cis, trans){
   }
 
 
-  tissues <- conquer.db::gtexTissuesV8
+  tissues <- conquer.d3js::gtexTissuesV8
   nodes.tissues <- data.frame(x = 2, y = seq(0,1,length.out = length(tissues)), id = tissues)
   nodes.tissues$color <- viridis::viridis_pal()(length(tissues))
 
