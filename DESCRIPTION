@@ -14,6 +14,5 @@ Depend:
   GenomicRanges,
   magrittr
 Imports: 
-  htmlwidgets,
-  conquer.db
+  htmlwidgets
 RoxygenNote: 7.1.0
