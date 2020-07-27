@@ -4,9 +4,9 @@
 #' @param height height of the figure
 #' @param elementId elementId
 #' @export 
-ConquerEdge <- function(conquerSummary, width = NULL, height = NULL, elementId = NULL) {
+ConquerEdge <- function(conquerSummary, width = NULL, height = NULL, elementId = NULL, disease="all") {
 
-  pathwayTissue <- EdgePrepareData(conquerSummary)
+  pathwayTissue <- EdgePrepareData(conquerSummary, disease=disease)
 
   x = list(
     pathwayTissue = pathwayTissue
