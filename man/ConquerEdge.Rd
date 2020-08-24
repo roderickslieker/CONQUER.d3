@@ -4,7 +4,13 @@
 \alias{ConquerEdge}
 \title{ConquerEdge}
 \usage{
-ConquerEdge(conquerSummary, width = NULL, height = NULL, elementId = NULL)
+ConquerEdge(
+  conquerSummary,
+  width = NULL,
+  height = NULL,
+  elementId = NULL,
+  disease = "all"
+)
 }
 \arguments{
 \item{conquerSummary}{Summary file  of CONQUER}
