@@ -38,10 +38,12 @@ PrepareConquerLocusZoom <- function(plotData){
   genes.gr <- plotData$genes
   exons.gr <- plotData$Exons
 
+
+
   rm.exons <- c(which(exons.gr$exstart < minld & exons.gr$exend < minld),
                 which(exons.gr$exstart > maxld & exons.gr$exend > maxld))
+  if(length(rm.exons) >= 1) exons.gr <- exons.gr[-rm.exons,]
 
-  exons.gr <- exons.gr[-rm.exons,]
   genes <- lz.GenebarPlot(Genes = genes.gr, Exons = exons.gr,
                        chr = unique(ld.temp$chr), xmin = minld, xmax = maxld)
   genes$middle <- ((genes$exend + genes$exstart)/2)

@@ -1,7 +1,7 @@
 Package: conquer.d3js
 Type: Package
 Title: Provide easy to use interface between R and d3
-Version: 1.0.0
+Version: 1.0.1
 Author: G.A.Bouland[aut], R.C.Slieker[aut,cre] 
 Maintainer: Roderick Slieker <r.c.slieker@lumc.nl>
 Description: This package is a help package for CONQUER.db and CONQUER which is an interface between d3 and R.
