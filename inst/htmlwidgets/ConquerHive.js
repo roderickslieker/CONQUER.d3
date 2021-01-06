@@ -28,10 +28,14 @@ HTMLWidgets.widget({
                         .attr("id","HiveContainer");
 
 
-        var innerRadius = width * 0.05;
-        var outerRadius = width * 0.5;
+        //var innerRadius = width * 0.05;
+        //var outerRadius = width * 0.5;
+        var innerRadius = 40,
+            outerRadius = 360;
+
         var nodes = x.nodes;
         var links = JSON.parse(x.links);
+
         var angle = d3v4.scalePoint()
                       .domain(d3v4.range(4))
                       .range([0, 2 * Math.PI]);
